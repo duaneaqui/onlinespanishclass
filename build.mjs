@@ -57,7 +57,8 @@ const programs = `
   ${intro("PROGRAMS AND PRICING", "Find the right Spanish class.", "Learn in a live online group or take private lessons focused on the situations you want to practice.")}
   <section class="feature" id="free-class"><div class="shell section">
     <p class="eyebrow">FREE INTRODUCTORY CLASS</p><h2>Try a one-hour Spanish class.</h2>
-    <p class="lead">Join a free, live online class to see how we teach. Ask Mundo De Palabra about the upcoming free-class schedule. If the class is a good fit, you can enroll in group or one-on-one lessons.</p>
+    <p class="lead">Join a free, live online class to see how we teach. If the class is a good fit, you can enroll in group or one-on-one lessons.</p>
+    <p class="muted">Free-class schedule inquiries are coming soon.</p>
     ${link("#classes", "Compare paid classes", "button secondary")}
   </div></section>
   <section class="section shell" id="classes"><h2>Compare class formats</h2><div class="plan-grid">
