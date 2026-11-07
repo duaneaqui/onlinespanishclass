@@ -6,13 +6,13 @@ const pages = [
   ["practice.html", "Practice"],
   ["about.html", "About"],
 ];
-const brand = `<a class="brand" href="index.html"><span class="mark" aria-hidden="true">ñ</span><span>Mundo De Palabra<small>ONLINE SPANISH SCHOOL</small></span></a>`;
+const brand = `<a class="brand" href="index.html"><span class="mark" aria-hidden="true">ñ</span><span>Mundo De Palabras<small>ONLINE SPANISH SCHOOL</small></span></a>`;
 const link = (href, label, className = "button") => `<a class="${className}" href="${href}">${label} <span aria-hidden="true">↗</span></a>`;
 const intro = (label, title, copy) => `<section class="page-intro"><div class="shell"><p class="eyebrow">${label}</p><h1>${title}</h1><p class="lead">${copy}</p></div></section>`;
 
 function layout(index, body) {
   const nav = pages.map(([href, label], i) => `<a href="${href}"${i === index ? ' aria-current="page"' : ""}>${label}</a>`).join("");
-  const title = index ? `${pages[index][1]} | Mundo De Palabra` : "Mundo De Palabra | Online Spanish School";
+  const title = index ? `${pages[index][1]} | Mundo De Palabras` : "Mundo De Palabras | Online Spanish School";
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -72,7 +72,7 @@ const programs = `
   </div></div></section>
   <section class="section shell faq"><h2>Common questions</h2>
     <details><summary>Can I start as a complete beginner?</summary><p>Yes. Start with pronunciation and simple phrases, then build toward more advanced conversations.</p></details>
-    <details><summary>Can children take classes?</summary><p>Yes. Mundo De Palabra welcomes both kids and adults.</p></details>
+    <details><summary>Can children take classes?</summary><p>Yes. Mundo De Palabras welcomes both kids and adults.</p></details>
     <details><summary>How do I pay?</summary><p>You can try choosing GCash or PayPal in the enrollment preview. Payments and seat reservations are inactive during the preview.</p></details>
   </section>
   <dialog aria-labelledby="checkout-title"><form id="checkout">
@@ -103,8 +103,8 @@ const practice = `
 
 const about = `
   ${intro("ABOUT MUNDO DE PALABRA", "An online school for Spanish learners.", "For kids and adults learning to speak Spanish for daily life, work, or a move to Spain.")}
-  <section class="shell section split owner"><figure><img src="dave.png" width="1254" height="1254" alt="Dave Lapana, owner of Mundo De Palabra"><figcaption>Dave Lapana · School owner</figcaption></figure>
-    <div><p class="eyebrow">MEET THE OWNER</p><h2>Dave Lapana</h2><p class="lead">Dave owns Mundo De Palabra, an online Spanish school offering live group and one-on-one classes. Students can start with everyday phrases and work toward conversations for bilingual customer service or life in Spain.</p>${link("programs.html#classes", "Explore the programs")}</div>
+  <section class="shell section split owner"><figure><img src="dave.png" width="1254" height="1254" alt="Dave Lapana, owner of Mundo De Palabras"><figcaption>Dave Lapana · School owner</figcaption></figure>
+    <div><p class="eyebrow">MEET THE OWNER</p><h2>Dave Lapana</h2><p class="lead">Dave owns Mundo De Palabras, an online Spanish school offering live group and one-on-one classes. Students can start with everyday phrases and work toward conversations for bilingual customer service or life in Spain.</p>${link("programs.html#classes", "Explore the programs")}</div>
   </section>
 `;
 
